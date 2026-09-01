@@ -7,14 +7,14 @@ class SlotMachine {
         this.totalCoins = 0;
     }
     play() {
-        this.coins += 10;
+        this.coins += 2;
         const result1 = Math.random() >= 0.5;
         const result2 = Math.random() >= 0.5;
         const result3 = Math.random() >= 0.5;
         if (result1 && result2 && result3) {
             this.totalCoins += this.coins;
             console.log(`Congratulations!!! You won ${this.coins} coins!!`);
-            console.log(`Total coins won ${this.totalCoins}`);
+            console.log(`Total coins won ${this.totalCoins}.`);
             this.coins = 0;
         }
         else {
